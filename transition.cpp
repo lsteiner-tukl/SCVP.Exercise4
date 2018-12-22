@@ -1,13 +1,31 @@
 #include "transition.h"
 
-void transition::fire()
+/*
+template<>
+void transition<1,1>::fire()
 {
-    if(in->testTokens() >= 1)
+    bool allTokens = true;
+
+    for(unsigned int i = 0; i < N; i++) // N access possible?
+    {
+        if(in[i]->testTokens() == 0)
+        {
+            allTokens = false;
+            break;
+        }
+    }
+
+    if(allTokens)
     {
         std::cout << this->name() << ": Fired" << std::endl;
-        in->removeTokens(1);
-        out->addTokens(1);
+
+        for(unsigned int i = 0; i < N; i++)
+            in[i]->removeTokens(1);
+
+        for(unsigned int i = 0; i < M; i++)
+            out[i]->addTokens(1);
     }
     else
         std::cout << this->name() << ": NOT Fired" << std::endl;
 }
+*/
