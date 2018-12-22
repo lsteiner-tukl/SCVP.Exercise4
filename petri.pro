@@ -5,7 +5,9 @@ CONFIG -= qt
 
 TARGET = petri
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    place.cpp \
+    transition.cpp
 
 QMAKE_CXXFLAGS += -std=c++0x
 
@@ -30,3 +32,8 @@ macx: {
 
 INCLUDEPATH += $${systemc_home}/include
 LIBS += -L$${systemc_home}/lib-$${systemc_target_arch} -lsystemc
+
+HEADERS += \
+    placeinterface.h \
+    place.h \
+    transition.h
