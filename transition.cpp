@@ -1,8 +1,8 @@
 #include "transition.h"
 
 /*
-template<>
-void transition<1,1>::fire()
+template<unsigned int N, unsigned int M>
+void transition<N, M>::fire()
 {
     bool allTokens = true;
 

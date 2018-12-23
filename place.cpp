@@ -1,5 +1,5 @@
 #include "place.h"
-
+/*
 place::place(unsigned int tokens): tokens(tokens)
 {}
 
@@ -17,3 +17,4 @@ unsigned int place::testTokens()
 {
     return tokens;
 }
+*/
