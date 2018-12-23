@@ -33,7 +33,7 @@ public:
             std::cout << this->name() << ": Fired" << std::endl;
 
             for(unsigned int i = 0; i < N; i++)
-                in[i]->testTokens();
+                in[i]->removeTokens();
 
             for(unsigned int i = 0; i < M; i++)
                 out[i]->addTokens();
